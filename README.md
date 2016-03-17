@@ -1,11 +1,12 @@
 # Fast-AES加密16进制
 ```ruby
 require 'fast-aes'
-aes = FastAES.new(key)
 key = '0cbd426126d7c7ca577016f10ccb0c16'
 key = key.scan(/../).map{|x| x.to_i(16)}.map(&:chr).join #需要把16进制串转为字符串(ASCII)
-text = '1c2c3c4c' + '0' * 24
+aes = FastAES.new(key)
+text = '1c2c3c4c'
 text = text.scan(/../).map{|x| x.to_i(16)}.map(&:chr).join #需要把16进制串转为字符串(ASCII)
+###### 加密
 data = aes.encrypt(text)
 secret = data.unpack('H*') #得到的16进制密文
 ###### 解密
