@@ -18,25 +18,6 @@ plain_text = plain.unpack('H*')
 
 纯ruby实现的AES加密算法
 
-## Installation
-
-Add this line to your application's Gemfile:
-
-```ruby
-gem 'ruby_original_aes'
-```
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install ruby_original_aes
-
-## Usage
-
-
 ## License
 
 The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
